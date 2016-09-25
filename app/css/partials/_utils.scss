@@ -1,5 +1,3 @@
-$fontQuicksand: 'Quicksand', sans-serif;
-$fontRajdhani: 'Rajdhani', sans-serif;
 
 
 $BREAKPOINT-SMALL        : 321px   !default;
@@ -55,6 +53,24 @@ $BREAKPOINT-ART-DIRECTOR : 2560px  !default;
 @mixin position-fixed($left:null, $top:null, $z-index:null, $right:null, $bottom:null) {
     position: fixed;
     @include position($left, $top, $z-index, $right, $bottom);
+}
+
+@mixin flex-center-center {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+}
+
+%flex-center-center {
+  @include flex-center-center;
+}
+
+@mixin flex($alignItems, $justifyContent, $flexDirection:null, $alignContent:null) {
+  display         : flex;
+  align-items     : $alignItems;
+  justify-content : $justifyContent;
+  flex-direction  : $flexDirection;
+  align-content   : $alignContent;
 }
 
 

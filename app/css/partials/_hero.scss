@@ -1,62 +1,12 @@
 .hero {
-  position: relative;
+  border-top: 4px solid $highlight;
+  padding: 40px;
 }
 
-.map-container {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  z-index: 0;
-  max-height: 90vh;
-
-  @include breakpoint(mb){
-    height: 400px;
-  }
+.hero_headline {
+  text-align: center;
 }
 
-.data-table {
-  margin: 20px auto;
-  td, th {
-    width: 180px;
-    border: 1px solid #999;
-    padding: 0.5rem;
-  }
-}
-
-.map-info {
-  padding: 30px 20px 20px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: rgba(#000, 0.75);
-  color: #fff;
-  width: 320px;
-
-  @include breakpoint(mb){
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-  }
-}
-
-.map-info-title {
-  text-transform: uppercase;
-  font-size: 14rem;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  opacity: 0.5;
-}
-
-.map-info-item-title {
+.hero_subheadline {
   display: block;
-  font-size: 10rem;
-  margin-top: 10px;
-  text-transform: uppercase;
-  opacity: 0.75;
-}
-
-.map-info-coord {
-  font-size: 72rem;
-  line-height: 1;
 }

@@ -8,13 +8,13 @@ html, body {
 }
 
 body {
-    position: relative;
-    font-size: 16rem;
-    color: #000;
-    background-color: #fff;
-    user-select: none;
-    overflow-x: hidden;
-    font-family: $fontQuicksand;
+  position: relative;
+  font-size: 12rem;
+  line-height: 1.25;
+  color: #000;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: $monospace;
 }
 
 .clearfix:after {
@@ -52,13 +52,50 @@ img {
   }
 }
 
-.btn {
-  &:focus {
-    outline: none;
-  }
+// layout
+
+.section {
+  position: relative;
+  width: 100%;
 }
 
-.number {
-  font-family: $fontRajdhani;
-  font-weight: 300;
+.container {
+  @include flex(center, space-between);
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.col {
+  width: 50%;
+}
+
+
+// Font styles
+.all-caps-mono {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.serif-header {
+  font-family: $serif;
+  font-size: 18rem;
+  line-height: 1.2;
+  margin: 40px 0 20px;
+}
+
+.jumbo-type {
+  font-family: $serif;
+  font-size: 250rem;
+  line-height: .84;
+}
+
+.less-jumbo-type {
+
+}
+
+
+.exp_info {
+  margin-top: 20px;
 }
