@@ -3,10 +3,19 @@
   padding-top: 70px;
   padding-bottom: 50px;
   text-align: center;
+
+  @include breakpoint(mb){
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
 }
 
 .thoughts_title {
   margin: 50px 0;
+
+  @include breakpoint(mb){
+    margin: 25px 0;
+  }
 }
 
 .thoughts_hr {

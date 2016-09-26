@@ -4,15 +4,28 @@
   height: 50px;
   -webkit-font-smoothing: antialiased;
   line-height: 50px;
+
+  @include breakpoint(mb){
+    height: 95px;
+    line-height: 1.5;
+  }
 }
 
 .footer_container {
   max-width: $maxWidth;
   margin: 0 auto;
+
+  @include breakpoint(mb){
+    padding-top: 30px;
+  }
 }
 
 .arr {
   color: $highlight;
+
+  @include breakpoint(mb){
+    display: none;
+  }
 }
 
 .footer_link {
@@ -21,10 +34,12 @@
 
   &:hover {
     color: $highlight;
-    // text-decoration: underline;
+  }
+}
 
-    .arr {
-      // text-decoration: none;
-    }
+.footer_el {
+  @include breakpoint(mb){
+    display: block;
+    text-align: center;
   }
 }

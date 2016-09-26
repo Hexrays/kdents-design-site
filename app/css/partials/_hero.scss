@@ -1,6 +1,10 @@
 .hero {
   border-top: 4px solid $highlight;
   padding: 40px;
+
+  @include breakpoint(mb){
+    padding: 20px 0 30px;
+  }
 }
 
 .hero_headline {
@@ -9,4 +13,5 @@
 
 .hero_subheadline {
   display: block;
+  margin-bottom: 20px;
 }

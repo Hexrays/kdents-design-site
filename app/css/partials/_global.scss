@@ -15,6 +15,10 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   font-family: $monospace;
+
+  @include breakpoint(mb){
+
+  }
 }
 
 .clearfix:after {
@@ -54,12 +58,19 @@ img {
 
 // layout
 
-.pull-right {
+.pull-right-gt-mb {
   float: right;
+  @include breakpoint(mb){
+    float: none;
+  }
 }
 
-.pull-left {
+.pull-left-gt-mb {
   float: left;
+
+  @include breakpoint(mb){
+    float: none;
+  }
 }
 
 .section {
@@ -69,9 +80,14 @@ img {
 
 .container {
   display: flex;
-  width: 100%;
+  width: 90%;
   max-width: $maxWidth;
   margin: 0 auto;
+
+  @include breakpoint(mb){
+    display: block;
+    width: 88%;
+  }
 }
 
 .col {
@@ -82,12 +98,10 @@ img {
   }
 }
 
-
 // Font styles
 .all-caps-mono {
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 20px;
 }
 
 .serif-header {
@@ -96,21 +110,36 @@ img {
   line-height: 1.2;
   margin: 35px 0 20px;
   letter-spacing: 1px;
+  @include breakpoint(mb){
+    font-size: 13rem;
+    margin: 25px 0 13px;
+  }
 }
 
 .jumbo-type {
   font-family: $serif;
   font-size: 250rem;
   line-height: .84;
+  @include breakpoint(tb){
+    font-size: 25vw;
+  }
 }
 
 .less-jumbo-type {
   font-family: $serif;
   font-size: 100rem;
   line-height: .9;
+
+  @include breakpoint(tb){
+    font-size: 10vw;
+  }
 }
 
 
 .exp_info {
   margin-top: 20px;
+
+  @include breakpoint(mb){
+    margin-top: 13px;
+  }
 }

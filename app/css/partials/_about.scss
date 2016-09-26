@@ -4,6 +4,10 @@
 
 .about_copy {
   margin-top: 20px;
+
+  @include breakpoint(mb){
+    margin-top: 13px;
+  }
 }
 
 .about_link {
@@ -23,6 +27,10 @@
 .about_cta {
   position: relative;
   width: 60%;
+
+  @include breakpoint(mb){
+    margin-top: 28px;
+  }
 }
 
 .about_cta-link {
@@ -59,4 +67,8 @@
   color: #000;
   transition: color 0.3s;
   -webkit-font-smoothing: antialiased;
+
+  @include breakpoint(mb){
+    font-size: 4vw;
+  }
 }
