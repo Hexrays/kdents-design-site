@@ -1,6 +1,24 @@
 .slider {
   height: 500px;
+}
 
-  @include flex-center-center;
-  border: 1px solid lime;
+.slider_container,
+.slider_list,
+.slider_item {
+  width: 100%;
+  height: 100%;
+}
+
+$totalSlides: 6;
+
+@for $i from 1 through $totalSlides {
+  .slide-#{$i} {
+    background: url('../images/slides/denton-#{$i}.png') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.slider_buttons {
+  position: absolute;
+  bottom: 0;
 }
