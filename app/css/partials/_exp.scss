@@ -1,0 +1,42 @@
+.exp {
+  background-color: $lightGrey;
+  padding-bottom: 40px;
+}
+
+.exp_callout {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.exp_employment {
+  padding-top: 30px;
+}
+
+.exp__callout-item {
+  .exp_title {
+    margin-top: 24px;
+    margin-bottom: 3px;
+  }
+  &:first-child {
+    .exp_title {
+      margin-top: 0;
+    }
+  }
+}
+
+.exp_callout-copy {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.exp_others {
+  padding-left: 30px;
+
+  @include breakpoint(mb){
+    padding-left: 0;
+  }
+}
