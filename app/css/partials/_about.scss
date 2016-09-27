@@ -18,6 +18,10 @@
   &:hover {
     text-decoration: underline;
   }
+
+  @include breakpoint(mb){
+    margin-top: 14px;
+  }
 }
 
 .about_col-2 {
@@ -29,6 +33,7 @@
   width: 60%;
 
   @include breakpoint(mb){
+    width: 70%;
     margin-top: 28px;
   }
 }
@@ -69,6 +74,8 @@
   -webkit-font-smoothing: antialiased;
 
   @include breakpoint(mb){
-    font-size: 4vw;
+    font-size: 5vw;
+    letter-spacing: 0;
+    line-height: 1.5;
   }
 }

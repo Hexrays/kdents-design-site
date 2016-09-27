@@ -17,7 +17,7 @@ body {
   font-family: $monospace;
 
   @include breakpoint(mb){
-
+    line-height: 1.5;
   }
 }
 
@@ -111,8 +111,9 @@ img {
   margin: 35px 0 20px;
   letter-spacing: 1px;
   @include breakpoint(mb){
-    font-size: 13rem;
+    font-size: 20rem;
     margin: 25px 0 13px;
+    letter-spacing: 0px;
   }
 }
 
@@ -134,7 +135,6 @@ img {
     font-size: 10vw;
   }
 }
-
 
 .exp_info {
   margin-top: 20px;
