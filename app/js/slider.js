@@ -1,5 +1,6 @@
 import Wallop from 'wallop';
 import { $$, $on } from './helpers';
+import swipe from './swipe';
 
 const Slider = () => {
 	const slider = document.querySelector('.Wallop');
@@ -29,6 +30,19 @@ const Slider = () => {
 	});
 
   startSliderInterval(sliderInterval);
+
+
+
+
+
+  function onSwipeRight() {
+  	console.log('swipe right');
+  }
+  function onSwipeLeft() {
+  	console.log('swipe left');	
+  }
+  swipe('slider', onSwipeRight, onSwipeLeft);
+
 }
 
 export default Slider;
