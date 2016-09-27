@@ -1,15 +1,8 @@
 /* jshint devel:true */
-import Wallop from 'wallop';
+import Slider from './slider';
 
-
-const slider = document.querySelector('.Wallop');
-const wallop = new Wallop(slider);
-
-console.log(wallop);
-
-const totalSlildes = 6;
-let currentSlide = 0;
-
-setInterval(() => {
-  wallop.next();
-}, 5000);
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    Slider();
+  }
+};

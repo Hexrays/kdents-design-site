@@ -47,6 +47,7 @@ $totalSlides: 6;
   text-indent: 0;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s;
+  z-index: 100;
 
   &:active, &:focus {
     outline: none;

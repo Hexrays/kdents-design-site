@@ -1,3 +1,13 @@
+export function $$(selector, context) {
+  context = context || document;
+  var elements = context.querySelectorAll(selector);
+  return Array.prototype.slice.call(elements);
+}
+
+export function $on(target, type, callback, useCapture = false) {
+  target.addEventListener(type, callback, !!useCapture);
+};
+
 export function convertToSnake (str) {
   let strArr = str.split(''),
       isLastUppercase = false;
