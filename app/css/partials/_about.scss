@@ -13,7 +13,7 @@
 .about_link {
   display: block;
   color: $highlight;
-  margin-top: 35px;
+  margin-top: 20px;
 
   &:hover {
     text-decoration: underline;
@@ -67,7 +67,6 @@
   font-family: $serif;
   font-size: 18rem;
   line-height: 1.7;
-  letter-spacing: 1px;
   text-align: center;
   color: #000;
   transition: color 0.3s;
