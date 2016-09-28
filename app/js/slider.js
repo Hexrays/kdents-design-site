@@ -4,7 +4,6 @@ import { $$, $on } from './helpers';
 const Slider = () => {
 	const slider = document.querySelector('.Wallop');
 	const wallop = new Wallop(slider);
-	const totalSlildes = 6;
 	const sliderBtns = $$('.slider_btn');
 
 	let sliderInterval, sliderTimeout;
