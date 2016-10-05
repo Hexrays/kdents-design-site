@@ -27,16 +27,22 @@
   height: 100%;
 }
 
-$totalSlides: 6;
+$totalSlides: 10;
 
 // Todo: Add retina images
 @for $i from 1 through $totalSlides {
   .slide-#{$i} {
-    background: url('../images/slides/denton-#{$i}.png') center center no-repeat;
+    background: url('../images/slides/denton-#{$i}.jpg') center center no-repeat;
+
+    @media screen and (min-resolution: 1.5dppx) and (min-width: 768px) {
+      background: url('../images/slides/denton-#{$i}@2x.jpg') center center no-repeat;
+      background-size: cover;
+    }
 
     @include breakpoint(tb){
       background-size: cover;
     }
+
   }
 }
 
