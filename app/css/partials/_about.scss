@@ -1,26 +1,41 @@
 .about {
+  margin-top: 70px;
   margin-bottom: 40px;
+
+  .container {
+    display: block;
+  }
+
+  @include breakpoint(mb){
+    margin-top: 50px;
+  }
 }
 
 .about_copy {
-  margin-top: 20px;
+  width: 88%;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 23rem;
+  line-height: 1.4;
 
   @include breakpoint(mb){
-    margin-top: 13px;
+    font-size: 16rem;
+    margin-top: 20px;
   }
 }
 
 .about_link {
   display: block;
   color: $highlight;
-  margin-top: 20px;
+  margin-top: 60px;
+  text-align: center;
 
   &:hover {
     text-decoration: underline;
   }
 
   @include breakpoint(mb){
-    margin-top: 14px;
+    margin-top: 24px;
   }
 }
 
@@ -30,31 +45,41 @@
 
 .about_cta {
   position: relative;
-  width: 60%;
+  width: 100%;
 
   @include breakpoint(mb){
-    width: 70%;
+    // width: 70%;
     margin-top: 28px;
   }
 }
 
 .about_cta-link {
   position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  border-radius: 100%;
-  border: 2px solid $highlight;
-  transition: all 0.3s;
-  background-color: #fff;
+  // width: 100%;
+  // height: 0;
+  // padding-bottom: 100%;
+  // border-radius: 100%;
+  // border: 2px solid $highlight;
+  // transition: all 0.3s;
+  // background-color: #fff;
+  margin-top: 30px;
+  font-family: $serif;
+  font-size: 16rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #000;
 
   &:hover {
     // border-color: #000;
-    background-color: #000;
+    // background-color: #000;
 
     .about_cta-copy {
       color: $highlight;
     }
+  }
+
+  @include breakpoint(mb){
+    margin-top: 40px;
   }
 }
 
