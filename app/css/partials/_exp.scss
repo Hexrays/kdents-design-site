@@ -67,9 +67,12 @@
 }
 
 .exp_others {
-  padding-top: 20px;
   padding-left: 30px;
   order: 2;
+
+  .exp_title {
+    margin-top: 30px;
+  }
 
   @include breakpoint(mb){
     padding-top: 0;

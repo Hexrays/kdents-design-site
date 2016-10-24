@@ -101,12 +101,12 @@ img {
 // Font styles
 .all-caps-mono {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  // letter-spacing: 5px;
 }
 
 .serif-header {
   font-family: $serif;
-  font-size: 18rem;
+  font-size: 24rem;
   line-height: 1.2;
   margin: 35px 0 10px;
   letter-spacing: 1px;
