@@ -1,6 +1,7 @@
 .exp {
   background-color: $lightGrey;
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
+  padding: 40px 0 80px;
 
   @include breakpoint(mb){
     padding-bottom: 0;
